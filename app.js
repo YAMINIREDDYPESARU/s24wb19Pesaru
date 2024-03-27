@@ -24,9 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/icecream',icecreamRouter);
-app.use('/grid',gridRouter);
-app.use('/pick',pickRouter);
+app.use('/icecream', icecreamRouter);
+app.use('/grid', gridRouter);
+app.use('/pick', pickRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
