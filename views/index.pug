@@ -5,3 +5,22 @@ block content
   p Welcome to #{title}
   p I am Yamini Reddy 
   button(type="button", class="btn btn-secondary", onclick = "double()") I am a button 
+br
+  br
+  //- Add a div with id "double" and text "Up the amount"
+  div#double Up the amount
+  br
+  a(href='/dress') View Search Results
+  
+  //- Script block
+  script.
+    // JavaScript code
+    var value = 0;
+    var power = 1;
+
+    function double() {
+      value += 1;
+      power *= 2;
+      document.getElementById("double").innerText = "Two to the power " + value + " is " + power;
+    }
+    
