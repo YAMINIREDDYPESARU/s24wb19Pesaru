@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to my web page
   p I am Yamini Reddy 
   button(type="button", class="bt n btn-secondary", onclick = "double()") I am a button 
   br
@@ -19,6 +19,6 @@ block content
     function double() {
       value += 1;
       power *= 2;
-      document.getElementById("double").innerText = "Two to the power " + value + " is " + power;
+      document.getElementById('double').innerText = `Two to the power ${value} is ${power}.`;
     }
     
